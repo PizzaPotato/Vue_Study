@@ -1,8 +1,9 @@
 import { createStore } from 'vuex'
-import { counter } from './modules'
+import { counter, popup } from './modules'
 
 export default createStore({
   modules: {
-    counter
+    counter,
+    popup
   }
 })

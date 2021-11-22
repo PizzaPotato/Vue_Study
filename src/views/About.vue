@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Counter from '../components/Counter'
+import Counter from '../components/modules/Counter'
 
 export default {
   components: { Counter }
