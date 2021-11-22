@@ -1,4 +1,5 @@
 # test
+- Vueの学習を行うためのリポジトリ
 
 ## Project setup
 ```
@@ -27,3 +28,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### 利用しているもの
+- Vue
+- Vuex
+- Grpc(予定)
