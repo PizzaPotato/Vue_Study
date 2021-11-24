@@ -32,4 +32,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### 利用しているもの
 - Vue
 - Vuex
+- vue-js-modal(入っているが利用していない)
 - Grpc(予定)

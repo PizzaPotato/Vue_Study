@@ -4,8 +4,9 @@
       <button @click="increase">increase</button>
       <button @click="decrease">decrease</button><br>
       <div>現在のカウントは：{{ count }}</div>
+      <PopUp v-if="isOpen"/>
     </div>
-    <PopUp></PopUp>
+
 </template>
 
 <script>
@@ -19,6 +20,9 @@ export default {
   computed: {
     count () {
       return this.$store.getters['counter/count']
+    },
+    isOpen () {
+      return this.$store.getters['popup/isOpen']
     }
   },
   methods: {
@@ -30,7 +34,12 @@ export default {
         this.$store.dispatch('counter/decrement')
       } else {
         console.log('これ以上は減算出来ません')
-        this.$store.dispatch('popup/setMessage', { msg: 'これ以上の減算は出来ません。' })
+        const payload = {
+          message: 'これ以上の減算は出来ません。',
+          isOpen: true
+        }
+        this.$store.dispatch('popup/setMessage', payload)
+        console.log(this.$store.getters['popup/isOpen'])
       }
     }
   }
