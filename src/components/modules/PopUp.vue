@@ -4,7 +4,7 @@
       <span class="modal__message">{{ getMessage }}</span>
       <div class="modal__action">
         <div class="modal__btn">キャンセル</div>
-        <div class="modal__btn modal__btn--success">OK</div> 
+        <div class="modal__btn modal__btn--success">OK</div>
       </div>
     </div>
   </div>
